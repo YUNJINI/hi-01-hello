@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ID, Class, Tag 우선순위</title>
+	<style>
+		.wrapper {border: 2px solid red;}
+		.logo {border: 2px solid darkgreen;}
+		h1 {color: darkorange; background-color: darkturquoise;}
+		h1.logo {color: red;}
+		h2.logo {color: green;}
+    .navi-wrap {background-color: gainsboro;}
+    .navi-wrap.main-navi {border: 2px solid deeppink;}
+    .navi-wrap.port-navi {border: 2px solid deepskyblue;}
+    .navi-wrap  .navi {color: green;}
+		.main-navi  .navi {border: 2px solid red;}
+		.port-navi  .navi {border: 2px solid blue;}
+  </style>
+</head>
+<body>
+	<div class="wrapper">
+	 <h1 class="logo">logo</h1>
+	 <ul class="navi-wrap main-navi" id="mainnavi" >
+	  <li class="navi">HOME</li>
+	  <li class="navi">ABOUT</li>
+	  <li class="navi">PORTFOLIO</li>
+	  <li class="navi">CONTACT</li>
+	 </ul>
+	 <!-- ul.navi-warp>li.navi*3 -->
+	 <ul class="navi-wrap port-navi" id="portnavi">
+		<li class="navi">PUBLISHING</li>
+		<li class="navi">FRONT-END</li>
+		<li class="navi">BACK-END</li>
+	 </ul> 
+		<h2 class="logo">logo</h2>
+		<h1>LOGO</h1>
+	 </div>
+</body>
+</html>
